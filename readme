@@ -1,22 +1,24 @@
-
-Certainly! Here's a brief README for the backend of your LiveWeather Update website using Django:
-
 LiveWeather Update Backend
 Welcome to the backend of LiveWeather Update, a Django application that powers the server-side functionality of the LiveWeather Update website. This backend is responsible for handling user authentication, managing weather data, and providing a seamless API for the frontend. Below are some key features of the backend:
 
 Features
+
 1. User Authentication
 Secure user authentication allows users to create accounts and log in securely.
 Token-based authentication ensures data privacy and security.
+
 2. Weather Data Management
 The backend manages real-time weather data and 5-day forecasts.
 Data is sourced from reliable weather APIs to provide accurate and up-to-date information.
+
 3. API Endpoints
 Well-defined API endpoints for user-related actions, weather data retrieval, and managing favorites.
 Easily integrate with the frontend to provide a smooth user experience.
+
 4. Database Management
 Utilizes a database to store user data, search history, and favorite cities.
 Ensures data integrity and persistence.
+
 5. Secure Communication
 Implements secure communication protocols to protect user data during interactions with the frontend.
 
@@ -29,9 +31,10 @@ Start the Django development server with python manage.py runserver.
 The backend is now running and ready to handle API requests from the frontend.
 
 API Endpoints
-/api/generate-token/: POST endpoint for user authentication and token generation.
-/api/search-history/: GET endpoint to retrieve user search history.
-/api/favorite-cities/: GET and POST endpoints to manage favorite cities.
+/generate-token/: POST endpoint for user authentication and token generation.
+/search-history/: GET endpoint to retrieve user search history.
+/favorite-cities/: GET and POST endpoint to retrieve and save favourite city.
+/weather/: GET endpoints to get the data of given city name.
 
 Integrating with Frontend
 
